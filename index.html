@@ -1,82 +1,154 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="AI portfolio showcasing innovative projects, videos, and blogs by AI Possible Teams">
-     <meta name="keywords" content="AI, machine learning, portfolio, projects">
-     <meta name="author" content="Your Name">
-     <title>AI Portfolio - Your Name</title>
-     <script src="https://cdn.tailwindcss.com"></script>
-     <link rel="stylesheet" href="/styles.css">
-     <style>
-       .video-container {
-         position: relative;
-         padding-bottom: 56.25%; /* 16:9 aspect ratio */
-         height: 0;
-         overflow: hidden;
-       }
-       .video-container iframe {
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-       }
-     </style>
-   </head>
-   <body class="bg-gray-100 font-sans">
-     <!-- Navigation -->
-     <nav class="bg-white shadow-md">
-       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-         <div class="flex justify-between h-16">
-           <div class="flex">
-             <div class="flex-shrink-0 flex items-center">
-               <h1 class="text-xl font-bold">AI Portfolio</h1>
-             </div>
-           </div>
-           <div class="flex items-center">
-             <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-               <a href="#home" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-               <a href="#portfolio" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
-               <a href="#blog" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Blog</a>
-               <a href="#contact" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-             </div>
-           </div>
-         </div>
-       </div>
-     </nav>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI portfolio showcasing innovative projects, videos, and blogs by AI Possible Teams">
+  <meta name="keywords" content="AI, machine learning, portfolio, projects">
+  <meta name="author" content="AI Possible Teams">
+  <title>AI Portfolio - Huyen Pham</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex">
+          <div class="flex-shrink-0 flex items-center">
+            <h1 class="text-xl font-bold">AI Portfolio</h1>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+            <a href="#home" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+            <a href="#portfolio" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+            <a href="#blog" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+            <a href="#contact" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-     <!-- Hero Section -->
-     <section id="home" class="bg-indigo-600 text-white py-20">
-       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-         <h2 class="text-4xl font-extrabold sm:text-5xl">Welcome to AI Portfolio</h2>
-         <p class="mt-4 text-lg">Explore innovative possible AI projects and insights.</p>
-         <a href="#portfolio" class="mt-6 inline-block bg-white text-indigo-600 px-6 py-3 rounded-md text-lg font-medium hover:bg-gray-100">View Projects</a>
-       </div>
-     </section>
+  <!-- Hero Section -->
+  <section id="home" class="bg-indigo-600 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-extrabold sm:text-5xl">Welcome to AI Make it Possible Portfolio</h2>
+      <p class="mt-4 text-lg">Explore innovative possible AI projects and insights.</p>
+      <a href="#portfolio" class="mt-6 inline-block bg-white text-indigo-600 px-6 py-3 rounded-md text-lg font-medium hover:bg-gray-100">View Projects</a>
+    </div>
+  </section>
 
-     <!-- Portfolio Section -->
-     <section id="portfolio" class="py-20 bg-gray-100">
-       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-         <h2 class="text-3xl font-bold text-center mb-10">Portfolio</h2>
-         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-           <!-- Project 1: Local GenAI chatbot (Video + GitHub Link) -->
-           <div class="bg-white rounded-lg shadow-md overflow-hidden">
-             <div class="video-container">
-               <iframe loading="lazy" src="https://youtu.be/7eeWA5l6Uis" title="Local GenAI Chatbot Demo" frameborder="0" allowfullscreen></iframe>
-             </div>
-             <div class="p-6">
-               <h3 class="text-xl font-semibold mb-2">AI Image Recognition</h3>
-               <p class="text-gray-600 mb-4">A real-time image recognition model using deep learning.</p>
-               <div class="flex space-x-4">
-                 <a href="https://github.com/phamhuyen286/General-chatbot-local-computer" class="text-indigo-600 hover:underline" target="_blank">View Code on GitHub</a>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-10">Portfolio</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1: Local GenAI chatbot (Video + GitHub Link) -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="video-container">
+            <iframe loading="lazy" src="https://youtu.be/7eeWA5l6Uis" title="Local GenAI Chatbot Demo" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Local GenAI Chatbot using Llama 3.2 + LangChain</h3>
+            <p class="text-gray-600 mb-4">🚀 The Future of AI is on the Edge: Fully Offline AI Assistant!
+                I have built a GenAI chatbot that runs 100% locally on MacBook Pro M4—no internet needed! 🤖💡
+                This is Edge AI in action: powerful, secure, and ultra-fast AI processing without cloud dependency.</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="https://github.com/phamhuyen286/General-chatbot-local-computer" class="text-indigo-600 hover:underline" target="_blank">View Code on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Oil & Gas industry AI and ML potential use cases (Presentation + GitHub Link)-->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="video-container">
+            <iframe loading="lazy" src="https://youtu.be/XNjnyuGCfYQ" title="Oil & Gas industry AI and ML potential use cases" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Composite AI - a near Future Possibility.</h3>
+            <p class="text-gray-600 mb-4">AI is revolutionizing oil & gas with:
+                🔹 Predictive Maintenance: AI monitors rigs & pipelines via IoT to prevent failures. (LSTM, Transformers)
+                 🔹 Seismic & Reservoir Analysis: AI detects oil reserves from seismic data. (CNNs – UNet, ResNet)
+                 🔹 Real-time Drilling Optimization: AI adjusts drilling parameters for efficiency. (Reinforcement Learning)
+                 🔹 Supply Chain Optimization: AI predicts oil demand & extracts insights from reports. (LLMs)
+                Composite AI enhances accuracy by combining:
+                🔹 Hybrid Models: LSTM, Transformers & XGBoost for forecasting.
+                 🔹 Knowledge Graphs: Industry data for deeper insights.
+                 🔹 Physics-Informed AI: Engineering simulations for better maintenance.</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="https://github.com/phamhuyen286/Oil-Gas-Chat" class="text-indigo-600 hover:underline" target="_blank">View Code on GitHub</a>
+              <a href="https://docs.google.com/presentation/d/1a09eYN1XIl2nkM8aO0nTsvnl4GdIbZesPikBwFCvS3k/edit?usp=sharing" class="text-indigo-600 hover:underline" target="_blank">Download Report</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Predictive Policy Lapsation Chatbot(YouTube Video + GitHub + PDF) -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="video-container">
+            <iframe loading="lazy" src="https://youtu.be/RvST7lpZUq8" title="Predictive Insurance Policy Lapsation Demo" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Predictive Analytics Model</h3>
+            <p class="text-gray-600 mb-4">✅ Industry: Insurance 
+                ✅ Use Case: Predicting policy lapsation 
+                ✅ Data: Synthetic dataset (due to limited open-source options) 
+                ✅ Tech Stack: Random Forest, Streamlit UI, Grok + Ollama for coding support
                 
-               </div>
-             </div>
-           </div>
+                Business Impact: By predicting policy lapsation, insurers can proactively engage customers at risk, reducing churn and increasing: 
+                💰 Premium income for insurers 
+                📈 Commission earnings for sales teams 
+                😊 Customer satisfaction with continued coverage </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="https://github.com/phamhuyen286/Insurance-use-case-policy-lapsation-/tree/main" class="text-indigo-600 hover:underline" target="_blank">View Code on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-           <!-- Project 2: Oil & Gas industry AI and ML potential use cases (Presentation + GitHub Link) -->
-           <div class="bg-white rounded-lg shadow-md overflow-hidden">
-             <div class="video-container">
-               <iframe loading="lazy" src="https://docs.google.com/presentation/d/1a09eYN1XIl2nkM8aO0nTsvnl4GdIbZesPikBwFCvS3k/edit?usp=sharing"
+  <!-- Blog Section (Placeholder) -->
+  <section id="blog" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-10">Blog</h2>
+      <p class="text-center text-gray-600">Coming soon: Insights and tutorials on AI and machine learning.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-10">Get in Touch</h2>
+      <p class="text-lg text-gray-600 mb-6">Interested in collaborating or learning more? Reach out!</p>
+      <a href="mailto:your.email@example.com" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-indigo-700">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
