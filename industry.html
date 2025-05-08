@@ -19,6 +19,17 @@
         height: 300px;
       }
     }
+    .portfolio-dropdown {
+      transition: visibility 0.2s, opacity 0.2s;
+      top دانش
+
+      top: 100%;
+      margin-top: 0;
+    }
+    .portfolio-button:hover + .portfolio-dropdown,
+    .portfolio-dropdown:hover {
+      display: block;
+    }
   </style>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -37,11 +48,11 @@
             <a href="/AI-Possible.github.io/index.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
             <a href="/AI-Possible.github.io/about.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
             <div class="relative group">
-              <button class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+              <button class="portfolio-button text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium flex items-center focus:outline-none">
                 Portfolio
-                <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                <svg class="ml-2 h-5 w-5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
               </button>
-              <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 z-10">
+              <div class="portfolio-dropdown absolute hidden group-hover:block bg-white shadow-lg rounded-md z-10 w-40">
                 <a href="/AI-Possible.github.io/projects.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Projects</a>
                 <a href="/AI-Possible.github.io/industry.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Industry</a>
               </div>
@@ -117,6 +128,13 @@
     document.getElementById('mobile-menu-button').addEventListener('click', () => {
       const mobileMenu = document.getElementById('mobile-menu');
       mobileMenu.classList.toggle('hidden');
+    });
+
+    // Optional: Click support for touch devices
+    document.querySelector('.portfolio-button').addEventListener('click', (e) => {
+      e.preventDefault();
+      const dropdown = document.querySelector('.portfolio-dropdown');
+      dropdown.classList.toggle('hidden');
     });
   </script>
   <script src="/AI-Possible.github.io/script.js"></script>

@@ -4,11 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contact AI Possible Teams">
-  <meta name="keywords" content="AI, contact, form">
+  <meta name="keywords" content="AI, contact, support">
   <meta name="author" content="Huyen Pham, AI Possible Teams">
-  <title>Contact - AI Portfolio</title>
+  <title>Contact Us - AI Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/AI-Possible.github.io/styles.css">
+  <style>
+    .portfolio-dropdown {
+      transition: visibility 0.2s, opacity 0.2s;
+      top: 100%;
+      margin-top: 0;
+    }
+    .portfolio-button:hover + .portfolio-dropdown,
+    .portfolio-dropdown:hover {
+      display: block;
+    }
+  </style>
 </head>
 <body class="bg-gray-100 font-sans">
   <!-- Navigation -->
@@ -21,81 +32,63 @@
           </div>
         </div>
         <div class="flex items-center">
+          <!-- Desktop Menu -->
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-            <a href="index.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-            <a href="about.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+            <a href="/AI-Possible.github.io/index.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+            <a href="/AI-Possible.github.io/about.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
             <div class="relative group">
-              <button class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+              <button class="portfolio-button text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium flex items-center focus:outline-none">
                 Portfolio
-                <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                <svg class="ml-2 h-5 w-5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
               </button>
-              <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2">
-                <a href="projects.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Projects</a>
-                <a href="industry.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Industry</a>
+              <div class="portfolio-dropdown absolute hidden group-hover:block bg-white shadow-lg rounded-md z-10 w-40">
+                <a href="/AI-Possible.github.io/projects.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Projects</a>
+                <a href="/AI-Possible.github.io/industry.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Industry</a>
               </div>
             </div>
-            <a href="blogs.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
-            <a href="contact.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+            <a href="/AI-Possible.github.io/blogs.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
+            <a href="/AI-Possible.github.io/contact.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+          </div>
+          <!-- Mobile Menu Button -->
+          <div class="sm:hidden flex items-center">
+            <button id="mobile-menu-button" class="text-gray-900 hover:text-indigo-600 focus:outline-none">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-white shadow-md">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="/AI-Possible.github.io/index.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">Home</a>
+        <a href="/AI-Possible.github.io/about.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">About Us</a>
+        <div class="pl-4">
+          <p class="text-gray-900 font-semibold">Portfolio</p>
+          <a href="/AI-Possible.github.io/projects.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 text-base">Projects</a>
+          <a href="/AI-Possible.github.io/industry.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 text-base">Industry</a>
+        </div>
+        <a href="/AI-Possible.github.io/blogs.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">Blogs</a>
+        <a href="/AI-Possible.github.io/contact.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">Contact</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="bg-indigo-600 text-white py-20">
+  <section class="bg-indigo-600 text-white py-12 sm:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl font-extrabold sm:text-5xl">Get in Touch</h2>
-      <p class="mt-4 text-lg">We’d love to hear from you!</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold">Contact Us</h2>
+      <p class="mt-4 text-base sm:text-lg">Get in touch with AI Possible Teams for inquiries or collaborations.</p>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="py-20 bg-gray-100">
+  <section class="py-12 sm:py-20 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Contact Form -->
-        <div>
-          <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
-          <form action="https://formspree.io/f/your_formspree_id" method="POST" class="space-y-4">
-            <div>
-              <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-              <input type="text" id="name" name="name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-            </div>
-            <div>
-              <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-              <input type="email" id="email" name="email" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-            </div>
-            <div>
-              <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-              <textarea id="message" name="message" rows="4" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
-            </div>
-            <div>
-              <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">Send Message</button>
-            </div>
-          </form>
-        </div>
-        <!-- Contact Details -->
-        <div>
-          <h2 class="text-2xl font-bold mb-6">Contact Details</h2>
-          <p class="text-gray-600 mb-4">Reach out to us directly:</p>
-          <ul class="text-gray-600">
-            <li class="mb-2"><strong>Email:</strong> <a href="mailto:huyen.pham@thenextransformers.com" class="text-indigo-600 hover:underline">huyen.pham@thenextransformers.com</a></li>
-            <li class="mb-2"><strong>Phone:</strong> +1 (123) 456-7890</li>
-            <li class="mb-2"><strong>Address:</strong> 123 AI Innovation St, Tech City, TC 12345</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p>© 2025 Huyen Pham and AI Possible Teams. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="/script.js"></script>
-</body>
-</html>
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10">Reach Out</h2>
+      <div class="max-w-lg mx-auto">
+        <p class="text-gray-600 text-sm sm:text-base mb-4">Email: <a href="mailto:huyen.pham@thenextransformers.com" class="text-indigo-600 hover:underline">huyen.pham@thenextransformers.com</a></p>
+        <p class="text-gray-600 text-sm sm:text-base mb-4">LinkedIn: <a href="https://www.linkedin.com/company/ai-possible" class="text-indigo-600 hover:underline" target="_blank">AI Possible</a></p>
+        <p class="text-gray-600 text-sm sm:text-base">We aim to respond within 48 hours.</p>
