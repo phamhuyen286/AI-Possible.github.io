@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AI portfolio showcasing innovative projects, videos, and blogs by AI Possible Teams">
-  <meta name="keywords" content="AI, machine learning, portfolio, projects">
-  <meta name="author" content="Huyen Pham and AI Possible Teams">
-  <title>AI Portfolio - Huyen Pham</title>
+  <meta name="description" content="Contact AI Possible Teams">
+  <meta name="keywords" content="AI, contact, form">
+  <meta name="author" content="Huyen Pham, AI Possible Teams">
+  <title>Contact - AI Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/styles.css">
 </head>
@@ -43,28 +43,47 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="bg-indigo-600 text-white py-20">
+  <section class="bg-indigo-600 text-white py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl font-extrabold sm:text-5xl">Welcome to AI Make it Possible Portfolio</h2>
-      <p class="mt-4 text-lg">Explore innovative AI projects, industry solutions, and insights.</p>
-      <a href="projects.html" class="mt-6 inline-block bg-white text-indigo-600 px-6 py-3 rounded-md text-lg font-medium hover:bg-gray-100">View Projects</a>
+      <h2 class="text-4xl font-extrabold sm:text-5xl">Get in Touch</h2>
+      <p class="mt-4 text-lg">We’d love to hear from you!</p>
     </div>
   </section>
 
-  <!-- Portfolio Teaser -->
-  <section id="portfolio" class="py-20 bg-gray-100">
+  <!-- Contact Section -->
+  <section class="py-20 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-center mb-10">Our Work</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-white rounded-lg shadow-md p-6 text-center">
-          <h3 class="text-xl font-semibold mb-2">AI Projects</h3>
-          <p class="text-gray-600 mb-4">Discover our cutting-edge AI projects, from local chatbots to predictive models.</p>
-          <a href="projects.html" class="text-indigo-600 hover:underline">Explore Projects</a>
+        <!-- Contact Form -->
+        <div>
+          <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
+          <form action="https://formspree.io/f/your_formspree_id" method="POST" class="space-y-4">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+              <input type="text" id="name" name="name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+              <input type="email" id="email" name="email" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+              <textarea id="message" name="message" rows="4" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">Send Message</button>
+            </div>
+          </form>
         </div>
-        <div class="bg-white rounded-lg shadow-md p-6 text-center">
-          <h3 class="text-xl font-semibold mb-2">Industry Solutions</h3>
-          <p class="text-gray-600 mb-4">See how AI transforms industries.</p>
-          <a href="industry.html" class="text-indigo-600 hover:underline">Explore Industries</a>
+        <!-- Contact Details -->
+        <div>
+          <h2 class="text-2xl font-bold mb-6">Contact Details</h2>
+          <p class="text-gray-600 mb-4">Reach out to us directly:</p>
+          <ul class="text-gray-600">
+            <li class="mb-2"><strong>Email:</strong> <a href="mailto:huyen.pham@thenextransformers.com" class="text-indigo-600 hover:underline">huyen.pham@example.com</a></li>
+            <li class="mb-2"><strong>Phone:</strong> +1 (123) 456-7890</li>
+            <li class="mb-2"><strong>Address:</strong> 123 AI Innovation St, Tech City, TC 12345</li>
+          </ul>
         </div>
       </div>
     </div>

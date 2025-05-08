@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Industry-specific AI solutions by AI Possible Teams">
+  <meta name="keywords" content="AI, machine learning, industry, oil and gas, insurance">
+  <meta name="author" content="Huyen Pham, AI Possible Teams">
+  <title>Industry Solutions - AI Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex">
+          <div class="flex-shrink-0 flex items-center">
+            <h1 class="text-xl font-bold">AI Portfolio</h1>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+            <a href="index.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+            <a href="about.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+            <div class="relative group">
+              <button class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                Portfolio
+                <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </button>
+              <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2">
+                <a href="projects.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Projects</a>
+                <a href="industry.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Industry</a>
+              </div>
+            </div>
+            <a href="blogs.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
+            <a href="contact.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-indigo-600 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-extrabold sm:text-5xl">Industry Solutions</h2>
+      <p class="mt-4 text-lg">Transforming industries with AI innovation.</p>
+    </div>
+  </section>
+
+  <!-- Industry Section -->
+  <section class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-10">Industry Applications</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Industry: Oil & Gas AI -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="video-container">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/XNjnyuGCfYQ" title="Oil & Gas Industry AI and ML Potential Use Cases" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Composite AI - a Near Future Possibility</h3>
+            <div class="text-gray-600 mb-4">
+              <p>AI is revolutionizing oil & gas with:</p>
+              <ul class="list-disc ml-6">
+                <li>Predictive Maintenance: AI monitors rigs & pipelines via IoT to prevent failures (LSTM, Transformers).</li>
+                <li>Seismic & Reservoir Analysis: AI detects oil reserves from seismic data (CNNs – UNet, ResNet).</li>
+                <li>Real-time Drilling Optimization: AI adjusts drilling parameters for efficiency (Reinforcement Learning).</li>
+                <li>Supply Chain Optimization: AI predicts oil demand & extracts insights from reports (LLMs).</li>
+              </ul>
+              <p class="mt-2">Composite AI enhances accuracy by combining:</p>
+              <ul class="list-disc ml-6">
+                <li>Hybrid Models: LSTM, Transformers & XGBoost for forecasting.</li>
+                <li>Knowledge Graphs: Industry data for deeper insights.</li>
+                <li>Physics-Informed AI: Engineering simulations for better maintenance.</li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <a href="https://github.com/phamhuyen286/Oil-Gas-Chat" class="text-indigo-600 hover:underline" target="_blank">View Code on GitHub</a>
+              <a href="/assets/docs/oil-gas-ai-report.pdf" class="text-indigo-600 hover:underline" target="_blank">Download Report</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p>© 2025 Huyen Pham, AI Possible Teams. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

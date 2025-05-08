@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Report on Local Edge AI Chatbot using Llama 3.2 and LangChain">
+  <meta name="keywords" content="AI, edge AI, chatbot, Llama, LangChain">
+  <meta name="author" content="Huyen Pham, AI Possible Teams">
+  <title>Local Edge AI Chatbot Report - AI Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .pdf-container {
+      position: relative;
+      padding-bottom: 141.42%; /* A4 aspect ratio (sqrt(2):1) */
+      height: 0;
+      overflow: hidden;
+    }
+    .pdf-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex">
+          <div class="flex-shrink-0 flex items-center">
+            <h1 class="text-xl font-bold">AI Portfolio</h1>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+            <a href="index.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+            <a href="about.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+            <div class="relative group">
+              <button class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                Portfolio
+                <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </button>
+              <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2">
+                <a href="projects.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Projects</a>
+                <a href="industry.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Industry</a>
+              </div>
+            </div>
+            <a href="blogs.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
+            <a href="contact.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Blog Post -->
+  <section class="py-20 bg-gray-100">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold mb-4">Local Edge AI Chatbot Report</h1>
+      <p class="text-gray-500 text-sm mb-6">April 29, 2025</p>
+      <div class="text-gray-600">
+        <p class="mb-4">This report details the development of our Local GenAI Chatbot, a fully offline AI assistant powered by Llama 3.2 and LangChain, running on a MacBook Pro M4. Designed for edge AI, it delivers secure and high-performance conversational AI without internet dependency.</p>
+        <p class="mb-4">Key technical features include:</p>
+        <ul class="list-disc ml-6 mb-4">
+          <li><strong>Local Processing</strong>: Leverages Llama 3.2 for on-device inference, ensuring data privacy.</li>
+          <li><strong>LangChain Integration</strong>: Enables context-aware conversations and tool integration.</li>
+          <li><strong>Optimized for M4</strong>: Utilizes Apple Silicon for efficient computation.</li>
+        </ul>
+        <p class="mb-4">Use cases include secure enterprise chatbots, offline customer support, and AI assistants in remote locations. This project showcases the potential of edge AI for real-world applications.</p>
+      </div>
+      <!-- Research Paper -->
+      <div class="mt-8">
+        <h2 class="text-2xl font-bold mb-4">Related Research</h2>
+        <p class="text-gray-600 mb-4">Explore this research paper on edge AI for offline AI applications:</p>
+        <div class="pdf-container">
+          <iframe src="/assets/docs/edge-ai-paper.pdf" title="Edge AI Research Paper" frameborder="0"></iframe>
+        </div>
+        <a href="/assets/docs/edge-ai-paper.pdf" class="text-indigo-600 hover:underline mt-4 inline-block" target="_blank">Download Research Paper</a>
+      </div>
+      <a href="blogs.html" class="text-indigo-600 hover:underline mt-6 inline-block">Back to Blogs</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p>© 2025 Huyen Pham and AI Possible Teams. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
