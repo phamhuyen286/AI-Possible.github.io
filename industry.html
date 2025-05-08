@@ -9,6 +9,17 @@
   <title>Industry Applications - AI Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/AI-Possible.github.io/styles.css">
+  <style>
+    .pdf-iframe {
+      width: 100%;
+      height: 500px;
+    }
+    @media (max-width: 640px) {
+      .pdf-iframe {
+        height: 300px;
+      }
+    }
+  </style>
 </head>
 <body class="bg-gray-100 font-sans">
   <!-- Navigation -->
@@ -21,6 +32,7 @@
           </div>
         </div>
         <div class="flex items-center">
+          <!-- Desktop Menu -->
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
             <a href="/AI-Possible.github.io/index.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
             <a href="/AI-Possible.github.io/about.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
@@ -29,7 +41,7 @@
                 Portfolio
                 <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
               </button>
-              <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2">
+              <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 z-10">
                 <a href="/AI-Possible.github.io/projects.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Projects</a>
                 <a href="/AI-Possible.github.io/industry.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Industry</a>
               </div>
@@ -37,35 +49,57 @@
             <a href="/AI-Possible.github.io/blogs.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
             <a href="/AI-Possible.github.io/contact.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
           </div>
+          <!-- Mobile Menu Button -->
+          <div class="sm:hidden flex items-center">
+            <button id="mobile-menu-button" class="text-gray-900 hover:text-indigo-600 focus:outline-none">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-white shadow-md">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="/AI-Possible.github.io/index.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">Home</a>
+        <a href="/AI-Possible.github.io/about.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">About Us</a>
+        <div class="pl-4">
+          <p class="text-gray-900 font-semibold">Portfolio</p>
+          <a href="/AI-Possible.github.io/projects.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 text-base">Projects</a>
+          <a href="/AI-Possible.github.io/industry.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 text-base">Industry</a>
+        </div>
+        <a href="/AI-Possible.github.io/blogs.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">Blogs</a>
+        <a href="/AI-Possible.github.io/contact.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">Contact</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="bg-indigo-600 text-white py-20">
+  <section class="bg-indigo-600 text-white py-12 sm:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl font-extrabold sm:text-5xl">Industry Applications</h2>
-      <p class="mt-4 text-lg">Discover how AI transforms industries like insurance and oil and gas.</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold">Industry Applications</h2>
+      <p class="mt-4 text-base sm:text-lg">Discover how AI transforms industries like insurance and oil and gas.</p>
     </div>
   </section>
 
   <!-- Industry Section -->
-  <section class="py-20 bg-gray-100">
+  <section class="py-12 sm:py-20 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-center mb-10">Our Impact</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10">Our Impact</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
         <!-- Insurance -->
-        <div class="bg-white rounded-lg shadow-md p-6">
-          <h3 class="text-xl font-semibold mb-2">Insurance</h3>
-          <p class="text-gray-600 mb-4">Our predictive analytics model reduces policy lapsation by identifying at-risk customers, boosting retention and revenue.</p>
-          <a href="/AI-Possible.github.io/assets/docs/policy-lapsation-report.pdf" class="text-indigo-600 hover:underline" target="_blank">Read Report</a>
+        <div class="bg-white rounded-lg shadow-md p-4 sm:p-6">
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Insurance</h3>
+          <p class="text-gray-600 text-sm sm:text-base mb-4">Our predictive analytics model reduces policy lapsation by identifying at-risk customers, boosting retention and revenue.</p>
+          <iframe src="https://docs.google.com/viewer?url=https://phamhuyen286.github.io/AI-Possible.github.io/assets/docs/policy-lapsation-report.pdf&embedded=true" title="Policy Lapsation Report" class="pdf-iframe"></iframe>
         </div>
         <!-- Oil and Gas -->
-        <div class="bg-white rounded-lg shadow-md p-6">
-          <h3 class="text-xl font-semibold mb-2">Oil and Gas</h3>
-          <p class="text-gray-600 mb-4">AI-driven analytics optimize exploration and production, improving efficiency and reducing costs.</p>
-          <a href="/AI-Possible.github.io/assets/docs/oil-gas-ai-report.pdf" class="text-indigo-600 hover:underline" target="_blank">Read Report</a>
+        <div class="bg-white rounded-lg shadow-md p-4 sm:p-6">
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Oil and Gas</h3>
+          <p class="text-gray-600 text-sm sm:text-base mb-4">AI-driven analytics optimize exploration and production, improving efficiency and reducing costs.</p>
+          <iframe src="https://docs.google.com/viewer?url=https://phamhuyen286.github.io/AI-Possible.github.io/assets/docs/oil-gas-ai-report.pdf&embedded=true" title="Oil and Gas AI Report" class="pdf-iframe"></iframe>
         </div>
       </div>
     </div>
@@ -78,6 +112,13 @@
     </div>
   </footer>
 
+  <script>
+    // Toggle mobile menu
+    document.getElementById('mobile-menu-button').addEventListener('click', () => {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
   <script src="/AI-Possible.github.io/script.js"></script>
 </body>
 </html>

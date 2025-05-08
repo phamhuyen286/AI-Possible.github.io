@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AI portfolio showcasing innovative projects, videos, and blogs by AI Possible Teams">
-  <meta name="keywords" content="AI, machine learning, portfolio, projects">
-  <meta name="author" content="Huyen Pham and AI Possible Teams">
-  <title>AI Portfolio - Huyen Pham</title>
+  <meta name="description" content="AI Portfolio by AI Possible Teams">
+  <meta name="keywords" content="AI, machine learning, portfolio">
+  <meta name="author" content="Huyen Pham, AI Possible Teams">
+  <title>AI Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/AI-Possible.github.io/styles.css">
 </head>
 <body class="bg-gray-100 font-sans">
   <!-- Navigation -->
@@ -21,52 +21,63 @@
           </div>
         </div>
         <div class="flex items-center">
+          <!-- Desktop Menu -->
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-            <a href="index.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-            <a href="about.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+            <a href="/AI-Possible.github.io/index.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+            <a href="/AI-Possible.github.io/about.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
             <div class="relative group">
               <button class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium flex items-center">
                 Portfolio
                 <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
               </button>
-              <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2">
-                <a href="projects.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Projects</a>
-                <a href="industry.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Industry</a>
+              <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 z-10">
+                <a href="/AI-Possible.github.io/projects.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Projects</a>
+                <a href="/AI-Possible.github.io/industry.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Industry</a>
               </div>
             </div>
-            <a href="blogs.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
-            <a href="contact.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+            <a href="/AI-Possible.github.io/blogs.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
+            <a href="/AI-Possible.github.io/contact.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+          </div>
+          <!-- Mobile Menu Button -->
+          <div class="sm:hidden flex items-center">
+            <button id="mobile-menu-button" class="text-gray-900 hover:text-indigo-600 focus:outline-none">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-white shadow-md">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="/AI-Possible.github.io/index.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">Home</a>
+        <a href="/AI-Possible.github.io/about.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">About Us</a>
+        <div class="pl-4">
+          <p class="text-gray-900 font-semibold">Portfolio</p>
+          <a href="/AI-Possible.github.io/projects.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 text-base">Projects</a>
+          <a href="/AI-Possible.github.io/industry.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 text-base">Industry</a>
+        </div>
+        <a href="/AI-Possible.github.io/blogs.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">Blogs</a>
+        <a href="/AI-Possible.github.io/contact.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">Contact</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="bg-indigo-600 text-white py-20">
+  <section class="bg-indigo-600 text-white py-12 sm:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl font-extrabold sm:text-5xl">Welcome to AI Make it Possible Portfolio</h2>
-      <p class="mt-4 text-lg">Explore innovative AI projects, industry solutions, and insights.</p>
-      <a href="projects.html" class="mt-6 inline-block bg-white text-indigo-600 px-6 py-3 rounded-md text-lg font-medium hover:bg-gray-100">View Projects</a>
+      <h2 class="text-3xl sm:text-4xl font-extrabold">Welcome to AI Portfolio</h2>
+      <p class="mt-4 text-base sm:text-lg">Showcasing innovative AI solutions by AI Possible Teams.</p>
     </div>
   </section>
 
-  <!-- Portfolio Teaser -->
-  <section id="portfolio" class="py-20 bg-gray-100">
+  <!-- Content Section -->
+  <section class="py-12 sm:py-20 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-center mb-10">Our Work</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-white rounded-lg shadow-md p-6 text-center">
-          <h3 class="text-xl font-semibold mb-2">AI Projects</h3>
-          <p class="text-gray-600 mb-4">Discover our cutting-edge AI projects, from local chatbots to predictive models.</p>
-          <a href="projects.html" class="text-indigo-600 hover:underline">Explore Projects</a>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-6 text-center">
-          <h3 class="text-xl font-semibold mb-2">Industry Solutions</h3>
-          <p class="text-gray-600 mb-4">See how AI transforms industries.</p>
-          <a href="industry.html" class="text-indigo-600 hover:underline">Explore Industries</a>
-        </div>
-      </div>
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10">Our Mission</h2>
+      <p class="text-gray-600 text-sm sm:text-base">We develop cutting-edge AI solutions to transform industries and drive innovation. Explore our projects, blogs, and industry applications.</p>
     </div>
   </section>
 
@@ -77,6 +88,13 @@
     </div>
   </footer>
 
-  <script src="/script.js"></script>
+  <script>
+    // Toggle mobile menu
+    document.getElementById('mobile-menu-button').addEventListener('click', () => {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  <script src="/AI-Possible.github.io/script.js"></script>
 </body>
 </html>
