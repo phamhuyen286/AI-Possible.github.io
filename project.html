@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI projects by AI Possible Teams">
+  <meta name="keywords" content="AI, machine learning, projects">
+  <meta name="author" content="Huyen Pham, AI Possible Teams">
+  <title>Projects - AI Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/AI-Possible.github.io/styles.css">
+  <style>
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex">
+          <div class="flex-shrink-0 flex items-center">
+            <h1 class="text-xl font-bold">AI Portfolio</h1>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+            <a href="/AI-Possible.github.io/index.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+            <a href="/AI-Possible.github.io/about.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+            <div class="relative group">
+              <button class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                Portfolio
+                <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+              </button>
+              <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2">
+                <a href="/AI-Possible.github.io/projects.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Projects</a>
+                <a href="/AI-Possible.github.io/industry.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50">Industry</a>
+              </div>
+            </div>
+            <a href="/AI-Possible.github.io/blogs.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
+            <a href="/AI-Possible.github.io/contact.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-indigo-600 text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl font-extrabold sm:text-5xl">Our AI Projects</h2>
+      <p class="mt-4 text-lg">Innovative AI solutions driving the future.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1: Local GenAI Chatbot -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="video-container">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/7eeWA5l6Uis" title="Local GenAI Chatbot Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Local GenAI Chatbot using Llama 3.2 + LangChain</h3>
+            <div class="text-gray-600 mb-4">
+              <p>🚀 The Future of AI is on the Edge: Fully Offline AI Assistant!</p>
+              <ul class="list-disc ml-6">
+                <li>Built a GenAI chatbot that runs 100% locally on MacBook Pro M4—no internet needed! 🤖💡</li>
+                <li>Edge AI in action: powerful, secure, and ultra-fast AI processing without cloud dependency.</li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <a href="https://github.com/phamhuyen286/General-chatbot-local-computer" class="text-indigo-600 hover:underline" target="_blank">View Code on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Predictive Analytics Model -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="video-container">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/RvST7lpZUq8" title="Predictive Insurance Policy Lapsation Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Predictive Analytics Model</h3>
+            <div class="text-gray-600 mb-4">
+              <ul class="list-disc ml-6">
+                <li>Industry: Insurance</li>
+                <li>Use Case: Predicting policy lapsation</li>
+                <li>Data: Synthetic dataset (due to limited open-source options)</li>
+                <li>Tech Stack: Random Forest, Streamlit UI, Grok + Ollama for coding support</li>
+              </ul>
+              <p class="mt-2">Business Impact: By predicting policy lapsation, insurers can proactively engage customers at risk, reducing churn and increasing:</p>
+              <ul class="list-disc ml-6">
+                <li>💰 Premium income for insurers</li>
+                <li>📈 Commission earnings for sales teams</li>
+                <li>😊 Customer satisfaction with continued coverage</li>
+              </ul>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <a href="https://github.com/phamhuyen286/Insurance-use-case-policy-lapsation-/tree/main" class="text-indigo-600 hover:underline" target="_blank">View Code on GitHub</a>
+              <a href="/AI-Possible.github.io/assets/docs/policy-lapsation-report.pdf" class="text-indigo-600 hover:underline" target="_blank">Download Report</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p>© 2025 Huyen Pham and AI Possible Teams. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/AI-Possible.github.io/script.js"></script>
+</body>
+</html>
