@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AI Portfolio by AI Possible Teams">
-  <meta name="keywords" content="AI, machine learning, portfolio">
+  <meta name="description" content="Knowledge Hub with AI Possible Teams">
+  <meta name="keywords" content="AI, knowledge hub, Notion, research">
   <meta name="author" content="Huyen Pham, AI Possible Teams">
-  <title>AI Portfolio</title>
+  <title>Knowledge Hub - AI Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/AI-Possible.github.io/styles.css">
   <style>
@@ -18,6 +18,15 @@
     .portfolio-button:hover + .portfolio-dropdown,
     .portfolio-dropdown:hover {
       display: block;
+    }
+    .notion-iframe {
+      width: 100%;
+      height: 600px;
+    }
+    @media (max-width: 640px) {
+      .notion-iframe {
+        height: 400px;
+      }
     }
   </style>
 </head>
@@ -81,17 +90,35 @@
   <!-- Hero Section -->
   <section class="bg-indigo-600 text-white py-12 sm:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl sm:text-4xl font-extrabold">Welcome to AI Portfolio</h2>
-      <p class="mt-4 text-base sm:text-lg">Showcasing innovative AI solutions by AI Possible Teams.</p>
-      <a href="/AI-Possible.github.io/projects.html" class="mt-6 inline-block bg-white text-indigo-600 font-semibold py-2 px-4 rounded-md hover:bg-gray-100">View Projects</a>
+      <h2 class="text-3xl sm:text-4xl font-extrabold">Knowledge Hub</h2>
+      <p class="mt-4 text-base sm:text-lg">Explore our sharing notes hosted on Notion.</p>
     </div>
   </section>
 
-  <!-- Content Section -->
+  <!-- Knowledge Hub Section -->
   <section class="py-12 sm:py-20 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10">Our Mission</h2>
-      <p class="text-gray-600 text-sm sm:text-base text-center">We develop cutting-edge AI solutions to transform industries and drive innovation. Explore our projects, blogs, and industry applications.</p>
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10">Our Notion Notes</h2>
+      <div class="grid grid-cols-1 gap-6 sm:gap-8">
+        <!-- Notion Note 1 -->
+        <div class="bg-white rounded-lg shadow-md p-4 sm:p-6">
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Implement Logistics Regression from Scatch with Mathematially and Coding</h3>
+          <iframe src="https://friendly-clavicle-c96.notion.site/ebd/1f03a24e78f080f5a370e930dbcd044d" class="notion-iframe" frameborder="0" allowfullscreen></iframe>
+          <p class="mt-4 text-gray-600 text-sm sm:text-base">Make your study of Logistic Regression more fun and easy.</p>
+        </div>
+        <!-- Placeholder Note 2 -->
+        <div class="bg-white rounded-lg shadow-md p-4 sm:p-6">
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Note 2</h3>
+          <p class="text-gray-600 text-sm sm:text-base mb-4">Another Notes (coming soon).</p>
+          <a href="https://www.notion.so" class="text-indigo-600 hover:underline text-sm sm:text-base" target="_blank">View on Notion</a>
+        </div>
+        <!-- Placeholder Note 3 -->
+        <div class="bg-white rounded-lg shadow-md p-4 sm:p-6">
+          <h3 class="text-lg sm:text-xl font-semibold mb-2">Note 3</h3>
+          <p class="text-gray-600 text-sm sm:text-base mb-4">More Notes (coming soon).</p>
+          <a href="https://www.notion.so" class="text-indigo-600 hover:underline text-sm sm:text-base" target="_blank">View on Notion</a>
+        </div>
+      </div>
     </div>
   </section>
 

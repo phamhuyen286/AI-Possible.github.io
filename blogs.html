@@ -19,6 +19,15 @@
     .portfolio-dropdown:hover {
       display: block;
     }
+    .notion-iframe {
+      width: 100%;
+      height: 600px;
+    }
+    @media (max-width: 640px) {
+      .notion-iframe {
+        height: 400px;
+      }
+    }
   </style>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -47,81 +56,10 @@
               </div>
             </div>
             <a href="/AI-Possible.github.io/blogs.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Blogs</a>
+            <a href="/AI-Possible.github.io/knowledge-hub.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Knowledge Hub</a>
             <a href="/AI-Possible.github.io/contact.html" class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
           </div>
           <!-- Mobile Menu Button -->
           <div class="sm:hidden flex items-center">
             <button id="mobile-menu-button" class="text-gray-900 hover:text-indigo-600 focus:outline-none">
-              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden sm:hidden bg-white shadow-md">
-      <div class="px-2 pt-2 pb-3 space-y-1">
-        <a href="/AI-Possible.github.io/index.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">Home</a>
-        <a href="/AI-Possible.github.io/about.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">About Us</a>
-        <div class="pl-4">
-          <p class="text-gray-900 font-semibold">Portfolio</p>
-          <a href="/AI-Possible.github.io/projects.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 text-base">Projects</a>
-          <a href="/AI-Possible.github.io/industry.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 text-base">Industry</a>
-        </div>
-        <a href="/AI-Possible.github.io/blogs.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">Blogs</a>
-        <a href="/AI-Possible.github.io/contact.html" class="block px-3 py-2 text-gray-900 hover:text-indigo-600 text-base font-medium">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="bg-indigo-600 text-white py-12 sm:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl sm:text-4xl font-extrabold">Our Blogs</h2>
-      <p class="mt-4 text-base sm:text-lg">Explore our latest AI research and insights.</p>
-    </div>
-  </section>
-
-  <!-- Blogs Section -->
-  <section class="py-12 sm:py-20 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10">Blog Posts</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
-        <a href="/AI-Possible.github.io/blog1.html" class="block bg-white rounded-lg shadow-md p-4 sm:p-6">
-          <h3 class="text-lg sm:text-xl font-semibold mb-2">Local Edge AI Chatbot</h3>
-          <p class="text-gray-600 text-sm sm:text-base">Discover our offline AI chatbot powered by Llama 3.2.</p>
-        </a>
-        <a href="/AI-Possible.github.io/blog2.html" class="block bg-white rounded-lg shadow-md p-4 sm:p-6">
-          <h3 class="text-lg sm:text-xl font-semibold mb-2">AI Privacy and Compliance</h3>
-          <p class="text-gray-600 text-sm sm:text-base">Learn about data protection in AI applications.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <p>© 2025 Huyen Pham and AI Possible Teams. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Toggle mobile menu
-    document.getElementById('mobile-menu-button').addEventListener('click', () => {
-      const mobileMenu = document.getElementById('mobile-menu');
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    // Optional: Click support for touch devices
-    document.querySelector('.portfolio-button').addEventListener('click', (e) => {
-      e.preventDefault();
-      const dropdown = document.querySelector('.portfolio-dropdown');
-      dropdown.classList.toggle('hidden');
-    });
-  </script>
-  <script src="/AI-Possible.github.io/script.js"></script>
-</body>
-</html>
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" view
